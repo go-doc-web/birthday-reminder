@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0;
+  background-color: #faf5ef;
+  /* background-color: #ece7df; */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 259px 0 459px;
+  /* outline: 1px solid tomato; */
+  max-width: 1440px;
+  height: 100vh;
+  /* max-height: 1024px; */
+  margin: 0 auto;
+  background: #ece7df;
+  margin: 0 auto;
+  background: url("../../../public/img/hero-bg-1x.jpg"), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../../public/img/hero-bg-2x.jpg");
+  }
+}
+
+.thumb {
+  width: 181px;
+  height: 181px;
+  margin: 0 auto;
+}
+
+.birthdayIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionTitle {
+  margin-top: 47px;
+  font-family: Joti One;
+  font-size: 48px;
+  font-weight: 400;
+  color: #744f42;
+
+  text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.afterTitle {
+  font-family: Jost;
+  font-size: 24px;
+  color: #a19b9b;
+}
+
+@media screen and (max-width: 390px) {
+  .section {
+    max-width: 390px;
+
+    /* height: 100vh; */
+    max-height: 844px;
+    background: url("../../../public/img/hero-bg-mob-1x.jpg"), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section {
+      background-image: url("../../../public/img/hero-bg-mob-2x.jpg");
+    }
+  }
+  .thumb {
+    width: 117px;
+    height: 117px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .afterTitle {
+    font-size: 16px;
+  }
+}
