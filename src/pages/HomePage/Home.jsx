@@ -8,7 +8,7 @@ function Home() {
         <div className={css.forkControl}>
           <h1>
             Birthday reminder! <br /> 
-            <span>Remember every anniversary</span>
+            <span>Platform for anniversaries</span>
           </h1>
           <p>Get notified before the special day </p>
           <div className={css.btnBlock}>
