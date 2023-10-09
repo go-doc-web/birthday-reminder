@@ -1,0 +1,162 @@
+.sectionHome {
+  padding: 100px 0 100px;
+  //   outline: 1px solid tomato;
+  max-width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 80%;
+  //   outline: 1px solid teal;
+  display: flex;
+  align-items: center;
+}
+
+.forkControl {
+  //   outline: 1px solid teal;
+  padding: 0 15px 0 15px;
+  width: 60%;
+}
+
+.forkControl h1 {
+  color: #744f42;
+  text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Joti One;
+  font-size: 48px;
+
+  font-weight: 400;
+  line-height: normal;
+}
+
+.forkControl h1 > span {
+  font-family: Jost;
+  font-weight: 500;
+  color: #000;
+}
+
+.forkControl p {
+  color: #a19b9b;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.btnBlock {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: block;
+
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  border: 1px solid #744f42;
+
+  &.active {
+    background-color: #744f42;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #744f42;
+    border: 1px solid transparent;
+  }
+}
+
+.infoField {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../../public/img/home-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+// linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+
+@media screen and (max-width: 972px) {
+  .infoField {
+    display: none;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .forkControl {
+    width: 100%;
+    // padding-right: 20px;
+    text-align: center;
+  }
+  .btnBlock {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .forkControl h1 {
+    font-size: 40px;
+  }
+
+  .forkControl h1 > span {
+    font-size: 36px;
+  }
+
+  .forkControl p {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .forkControl h1 {
+    font-size: 32px;
+  }
+
+  .forkControl h1 > span {
+    font-size: 28px;
+  }
+
+  .forkControl p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 356px) {
+  .forkControl h1 {
+    font-size: 28px;
+  }
+
+  .forkControl h1 > span {
+    font-size: 22px;
+  }
+
+  .forkControl p {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}

@@ -7,7 +7,7 @@ const Hero = () => {
       <div className={css.thumb}>
         <img
           className={css.birthdayIcon}
-          src="./img/birthday-img-1x.png"
+          src="/img/birthday-img-1x.png"
           alt="birthday icon"
         />
       </div>

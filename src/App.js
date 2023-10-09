@@ -1,12 +1,16 @@
-// import logo from "./logo.svg";
-import Hero from "./componets/Hero/Hero";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/HomePage/Home";
+import Main from "./pages/MainPages/Main";
+import NotFound from "./pages/NotFound/NotFound";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/main" element={<Main />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
-}
+};
 
 export default App;
