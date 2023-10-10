@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import css from "./Home.module.scss";
+import Login from "../LoginPage/Login";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
             </Link>
           </div>
         </div>
+
         <div className={css.infoField}></div>
       </div>
     </section>
