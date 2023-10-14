@@ -8,9 +8,10 @@ function Home() {
       <div className={css.wrapper}>
         <div className={css.forkControl}>
           <h1>
-            Birthday reminder! <br /> <span>Platform for your holiday</span>
+            Birthday reminder! <br /> 
+            <span>Platform for anniversaries</span>
           </h1>
-          <p>Remember this wonderful date</p>
+          <p>Get notified before the special day </p>
           <div className={css.btnBlock}>
             <Link className={css.btn} to="/register">
               Register
