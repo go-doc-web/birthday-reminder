@@ -12,7 +12,7 @@ const Login = () => {
         <br />
         <hr />
         <p>
-          Нет аккаунта? <Link to="/register">Зарегистрироваться</Link>
+         Dont have an account? <Link to="/register">Register</Link>
         </p>
       </div>
 
